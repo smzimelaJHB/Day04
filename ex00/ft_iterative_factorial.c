@@ -4,12 +4,20 @@
 int ft_iterative_factorial(int nb)
 {
 	int x = 1;
-	while(nb > 0 )
+
+	if(nb>0)
 	{
-       x = x * nb;
-	   nb --;
+    	while(nb > 0 )
+	    {
+          x = x * nb;
+	      nb --;
+      	}
+    	return x;
 	}
-	return x;
+	else
+	{
+		return 0;
+	}
 
 }
 
